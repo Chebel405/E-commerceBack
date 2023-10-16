@@ -1,4 +1,4 @@
-package com.Entity;
+package demo.Entity;
 
 public class Compte {
     private String Nom;

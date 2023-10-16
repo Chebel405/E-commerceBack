@@ -1,6 +1,6 @@
-package com.Service;
+package demo.Service;
 
-import com.Entity.Produit;
+import demo.Entity.Produit;
 import org.springframework.context.annotation.ComponentScan;
 
 import java.util.List;

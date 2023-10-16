@@ -1,7 +1,7 @@
-package com.Controller;
+package demo.Controller;
 
-import com.Entity.Produit;
-import com.Service.ProduitService;
+import demo.Entity.Produit;
+import demo.Service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,10 +23,8 @@ public class ProduitController {
     public List<Produit> findAll() {
         return produitService.findAll();
     }
-    @GetMapping("")
-    public Optional<Produit> findById(@PathVariable Long id) { return produitService.findById(id);
-
-    }
+    @GetMapping("/{id}")
+    public Optional<Produit> findById(@PathVariable Long id) { return produitService.findById(id);}
     @PostMapping("/")
     public Produit createProduit(@RequestBody Produit produit ){
         return produitService.createProduit(produit);

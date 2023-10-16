@@ -1,6 +1,7 @@
-package com.Entity;
+package demo.Entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -17,7 +18,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @SpringBootApplication
 @Entity
 public class Produit {
-
+@Id
     private Long id;
     public String Nom;
     public String Image;
